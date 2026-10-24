@@ -3,33 +3,81 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Awaiting a summon — Faytell</title>
-  <meta name="description" content="This Faytell URL is the empty summon pattern. No content has been chosen for it.">
+  <!--
+    PAGE TEMPLATE
+    1. Copy this folder to s/<slug>/ (short, lowercase, hyphens: s/heat-pumps/).
+    2. Replace every "Your ..." placeholder below. Delete the blocks you don't need.
+    3. Put images and videos for the page in the same folder, next to index.html.
+    4. Update the five "og:" lines too: they decide how the link looks when
+       it is pasted into a comment field, chat or social post.
+    Leave s/example/ itself as it is. It is the template.
+  -->
+  <title>Your title — Faytell</title>
+  <meta name="description" content="One sentence saying what this page shows.">
   <meta name="theme-color" content="#08090b">
+  <!-- Delete this robots line in your copy, so search engines may list the page. -->
+  <meta name="robots" content="noindex">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Faytell">
+  <meta property="og:title" content="Your title">
+  <meta property="og:description" content="One sentence saying what this page shows.">
+  <meta property="og:url" content="https://republic-of-grip.github.io/faytell/s/example/">
+  <!-- Optional preview picture, about 1200×630: <meta property="og:image" content="https://republic-of-grip.github.io/faytell/s/<slug>/preview.png"> -->
   <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body>
-  <!--
-    Summon pattern. Copy this directory to s/<slug>/ and replace the
-    stage copy with the chosen content. Leave s/example/ empty.
-  -->
   <a class="skip" href="#main">Skip to content</a>
   <div class="frame">
     <header class="bar">
       <a class="mark" href="../../">Faytell</a>
-      <span class="bar-meta">Unsummoned</span>
+      <span class="bar-meta">Template</span>
     </header>
     <main id="main" class="stage">
-      <p class="kicker">Awaiting a summon</p>
-      <h1>Nothing chosen.</h1>
-      <p class="deck">This URL is the pattern for a shared page. No content has been placed here. A summon replaces this hush with what was chosen — and only that.</p>
-      <p class="quiet">Pattern <span class="path">s/example/</span>. Copy the directory. Do not park a stand-in subject on this address.</p>
+      <!-- Where the conversation is. Remove this line if there is none. -->
+      <p class="kicker">In reply to <a href="https://example.com/">Your source: newspaper, article or thread</a></p>
+      <h1>Your title</h1>
+      <p class="deck">Your opening: the point of the page in a sentence or two.</p>
+      <p class="meta"><time datetime="2026-10-24">24 October 2026</time></p>
+
+      <article class="prose">
+        <p>Your reasoning, in as many paragraphs as it needs.</p>
+
+        <h2>A section heading, if the page is long</h2>
+        <p>More text. <a href="https://example.com/">Links</a> work as usual.</p>
+
+        <!-- Image or infographic. Put the file in this folder and point src at it. -->
+        <figure>
+          <svg class="placeholder" viewBox="0 0 640 360" role="img" aria-label="Where an image or infographic goes">
+            <rect x="0.5" y="0.5" width="639" height="359" fill="none" stroke="currentColor" stroke-opacity="0.3"/>
+            <text x="320" y="186" text-anchor="middle" fill="currentColor" fill-opacity="0.55" font-size="18">Image or infographic</text>
+          </svg>
+          <!-- <img src="your-image.png" alt="What the image shows, for people who can't see it"> -->
+          <figcaption>Your caption, and where the image comes from.</figcaption>
+        </figure>
+
+        <!-- Video. Either a file in this folder: -->
+        <!-- <figure><video src="your-film.mp4" controls preload="metadata"></video><figcaption>Caption</figcaption></figure> -->
+        <!-- Or an embed, e.g. YouTube (use the youtube-nocookie.com address): -->
+        <!-- <figure><div class="embed"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="What the video is" allowfullscreen></iframe></div><figcaption>Caption</figcaption></figure> -->
+
+        <blockquote>
+          <p>A quotation, if one helps.</p>
+        </blockquote>
+
+        <!-- Sources. Remove if there are none. -->
+        <h2>Sources</h2>
+        <ol class="sources">
+          <li><a href="https://example.com/">Your source</a></li>
+        </ol>
+      </article>
+
       <nav class="actions" aria-label="Related">
-        <a href="../../">Back to the window</a>
-      </nav>    </main>
+        <a href="../../">About Faytell</a>
+      </nav>
+    </main>
     <footer class="foot">
-      <span>Empty stage</span>
+      <span>Faytell</span>
       <a href="https://github.com/Republic-of-Grip/faytell">Workshop</a>
     </footer>
   </div>
