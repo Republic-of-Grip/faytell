@@ -1,40 +1,40 @@
 # Faytell
 
-Faytell is a summonable public window for chosen content. Thor decides what appears. Anyone with the URL can look. The link is shared only when he chooses to share it.
+A window for what a comment field can't hold.
 
-**GitHub** is the workshop: source, coordination, contribution. **GitHub Pages** is the only public window.
+When I'm part of a conversation somewhere else, like a newspaper's comment section or a forum thread, the format often allows only plain text. Faytell is where the rest goes: a picture, a film, an infographic or a longer line of reasoning. Each page holds one thought, carries a date and links back to the conversation it belongs to. I post the link there.
 
-This is not an open generator. V0 is an empty stage and a pattern for adding pages later. Nothing on the site is sample subject matter.
+Nothing here is generated. Every page is put up by hand, on purpose.
 
-Ambient listening — a page that writes itself from conversation — is a later aspiration. It is not built here.
+- **Site:** https://republic-of-grip.github.io/faytell/
+- **Page template:** https://republic-of-grip.github.io/faytell/s/example/
 
-## Public site
+## Add a page
 
-https://republic-of-grip.github.io/faytell/
+1. Copy `s/example/` to `s/<slug>/`. Use a short, lowercase name with hyphens, e.g. `s/heat-pumps/`.
+2. Open `s/<slug>/index.html` and replace the "Your ..." placeholders. Delete any blocks you don't need: image, video, quote, sources.
+3. Put the page's images and videos in the same folder.
+4. Fill in the `og:` lines at the top. They decide how the link looks when pasted into a comment field or chat.
+5. Delete the `robots` line, which is only there to keep the template out of search engines.
+6. Commit and push to `main`. The page is live at `https://republic-of-grip.github.io/faytell/s/<slug>/` a minute or two later.
 
-Home explains the window. The unsummoned pattern lives at:
+Keep drafts in `drafts/`. Git ignores that folder, so drafts never get published.
 
-https://republic-of-grip.github.io/faytell/s/example/
+## Before you push
 
-## Local preview
+- **Pushing to `main` publishes.** The repository is public, so a pushed page can be found even if you never share its link.
+- **Deleting a page doesn't erase it.** It disappears from the site, but stays in the repository's history. Only push what you're fine with being public for good.
+- **If bots help write pages,** let them open a pull request and merge it yourself. A branch protection rule on `main` can enforce that.
 
-From this directory:
+## Preview locally
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Open http://127.0.0.1:8080/
+Then open http://127.0.0.1:8080/. The 404 page uses `/faytell/` paths, so it only looks right on the live site.
 
-## Add a summon page
-
-1. Copy `s/example/` to `s/<slug>/`. Use a short, stable slug. Leave `s/example/` empty — it is the pattern, not a draft slot.
-2. Replace the awaiting-summon copy with the chosen content. Keep the shared chrome: `assets/site.css` and the frame markup.
-3. Commit to `main` and push.
-4. The public URL is `https://republic-of-grip.github.io/faytell/s/<slug>/`.
-5. Share that URL only when you mean to. Pushing publishes it.
-
-Pages is served from the `main` branch at `/` (repository root). A `.nojekyll` file keeps the static files unprocessed.
+Pages is served from the `main` branch, repository root. The `.nojekyll` file tells GitHub to serve the files as they are.
 
 ## License
 
