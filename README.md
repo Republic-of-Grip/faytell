@@ -4,7 +4,7 @@ A window for what a comment field can't hold.
 
 When I'm part of a conversation somewhere else, like a newspaper's comment section or a forum thread, the format often allows only plain text. Faytell is where the rest goes: a picture, a film, an infographic or a longer line of reasoning. Each page holds one thought, carries a date and links back to the conversation it belongs to. I post the link there.
 
-Nothing here is generated. Every page is put up by hand, on purpose.
+Nothing here writes itself. Whoever helped make a page, I choose and approve it before it goes up.
 
 - **Site:** https://republic-of-grip.github.io/faytell/
 - **Page template:** https://republic-of-grip.github.io/faytell/s/example/
@@ -24,7 +24,7 @@ Keep drafts in `drafts/`. Git ignores that folder, so drafts never get published
 
 - **Pushing to `main` publishes.** The repository is public, so a pushed page can be found even if you never share its link.
 - **Deleting a page doesn't erase it.** It disappears from the site, but stays in the repository's history. Only push what you're fine with being public for good.
-- **If bots help write pages,** let them open a pull request and merge it yourself. A branch protection rule on `main` can enforce that.
+- **If bots help write pages,** let them open a pull request, and merge it yourself or tell your agent to. That merge is the approval. A branch protection rule on `main` can enforce it.
 
 ## Preview locally
 
